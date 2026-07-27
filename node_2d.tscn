@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dionwj5u8x3bi"]
+
+[ext_resource type="Script" uid="uid://c2bt7xkbku3aa" path="res://sprite_2d.gd" id="1_wtcfe"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_61q87"]
+
+[node name="Node2D" type="Node2D" unique_id=1926475095]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1146140170]
+position = Vector2(279, 186)
+scale = Vector2(0.23730469, 0.22949222)
+texture = SubResource("NoiseTexture2D_61q87")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Sprite2D" unique_id=620170610]
+script = ExtResource("1_wtcfe")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1544411645]
+
+[node name="VirtualJoystick" type="VirtualJoystick" parent="CanvasLayer" unique_id=767979399]
+offset_left = 71.0
+offset_top = 465.0
+offset_right = 111.0
+offset_bottom = 505.0
